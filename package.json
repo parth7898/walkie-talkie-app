@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "export": "next build",
     "cap:init": "npx cap add android",
     "cap:sync": "npx cap sync",
