@@ -6,11 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p $PORT",
-    "export": "next build",
     "cap:init": "npx cap add android",
     "cap:sync": "npx cap sync",
     "cap:open": "npx cap open android",
-    "build:android": "npm run export && npx cap sync && npx cap open android"
+    "build:android": "CAPACITOR_BUILD=true npm run build && npx cap sync && npx cap open android"
   },
   "dependencies": {
     "@capacitor/android": "^8.0.1",
